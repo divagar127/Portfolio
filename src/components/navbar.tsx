@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Download, Github, Linkedin, Mail } from "lucide-react";
+import { Menu, X, Download, Github, Linkedin, Mail, ArrowUp } from "lucide-react";
 import { motion } from "motion/react";
 import { ThemeToggle } from "./theme";
 import { LINKS } from "@/lib/portfolio-data";
@@ -187,5 +187,29 @@ export function Navbar() {
         </div>
       )}
     </motion.header>
+  );
+}
+
+export function BackToTop() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShow(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  if (!show) return null;
+
+  return (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      aria-label="Back to top"
+      className="btn-accent fixed bottom-6 right-6 z-50 flex size-11 cursor-pointer items-center justify-center rounded-full shadow-2xl backdrop-blur-xl transition-all duration-300 hover:scale-110"
+    >
+      <ArrowUp className="size-5" />
+    </button>
   );
 }

@@ -36,8 +36,8 @@ function SectionHeading({
   return (
     <Reveal className="mb-10 max-w-2xl">
       <h2 className="text-3xl font-extrabold uppercase tracking-tight sm:text-4xl">{eyebrow}</h2>
-      <p className="mt-2 text-lg font-semibold tracking-tight text-muted-foreground sm:text-xl">
-        {title} <span className="gradient-text">{accent}</span>
+      <p className="mt-2 text-lg font-bold tracking-tight text-accent sm:text-xl">
+        {title} {accent}
       </p>
       {sub && <p className="mt-3 text-sm text-muted-foreground">{sub}</p>}
     </Reveal>

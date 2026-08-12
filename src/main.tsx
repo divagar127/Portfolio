@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Navbar, SocialRail } from "./components/navbar";
+import { Navbar, SocialRail, BackToTop } from "./components/navbar";
 import {
   Hero,
   About,
@@ -23,6 +23,7 @@ function App() {
       <div className="relative min-h-screen bg-background text-foreground selection:bg-accent/25 selection:text-accent">
         <Navbar />
         <SocialRail />
+        <BackToTop />
         <main>
           <Hero />
           <About />
