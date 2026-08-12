@@ -123,7 +123,7 @@ export const education = [
     period: "2023",
     location: "Puducherry",
     description: "",
-    achievements: ["I have completed my 12th grade with a score of 87.2%"],
+    achievements: ["I have completed my 12th grade with a score of 83.5%"],
   },
   {
     degree: "10th grade",
