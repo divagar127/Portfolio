@@ -772,7 +772,7 @@ export function Activity() {
 
 const WEB3FORMS_KEY =
   (import.meta.env.VITE_WEB3FORMS_KEY as string | undefined) ||
-  "37d0027f-2bb7-4867-b79e-dab39a8ba257";
+  "12052b6a-1df6-475a-ae98-897d769a110c";
 
 export function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
