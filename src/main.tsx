@@ -35,8 +35,15 @@ function App() {
           <Activity />
           <Contact />
         </main>
-        <footer className="border-t border-border py-8 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Divagar S. All rights reserved.
+        <footer className="border-t border-border/40 py-10 text-center">
+          <div className="flex flex-col items-center justify-center space-y-1">
+            <span className="text-xl font-extrabold tracking-tight text-foreground">
+              Divagar<span className="text-accent">.</span>
+            </span>
+            <p className="text-sm font-medium text-muted-foreground">
+              Built with passion for AI &amp; innovation.
+            </p>
+          </div>
         </footer>
       </div>
     </QueryClientProvider>
