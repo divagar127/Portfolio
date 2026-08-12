@@ -1,0 +1,30 @@
+{
+  "headers": [
+    {
+      "source": "/Divagar-S-Resume.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline; filename=\"Divagar-S-Resume.pdf\""
+        }
+      ]
+    },
+    {
+      "source": "/Divagar-Internship-Certificate.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline; filename=\"Divagar-Internship-Certificate.pdf\""
+        }
+      ]
+    }
+  ]
+}
